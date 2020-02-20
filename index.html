@@ -1,0 +1,58 @@
+<html>
+
+    <head>  
+        <title>Lista de Convidados</title>
+        <meta charset="utf-8">
+
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="card">
+            <div>
+                <h2>Adicionar Convidado</h2>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Nome" id="nomeConvidado" class="card-input">
+            </div>
+            
+            <div>
+                <input type="number" placeholder="Idade" id="idadeConvidado" class="card-input">
+            </div>
+
+            <div>
+                <label>Feminino</label>
+                <input type="radio" name="sexo" value="F" id="fem">
+                <label>Masculino</label>
+                <input type="radio" name="sexo" value="M" id="masc">
+            </div>
+
+            <div>
+                <button type="button" class="botao" onclick="gerenciar.salvar()">Salvar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>Lista de Convidados</h2>
+            </div>
+
+            <table>
+                <thead>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                </thead>
+
+                <tbody id="lista"></tbody>
+            </table>
+
+        </div>
+
+    </body>
+
+</html>
